@@ -423,29 +423,32 @@
               </svg>
             </div>
           </div>
-          <div class="form-data">
+          <div class="form-data comment-container">
             <label for="user-comment" class="form-label">Comment</label>
-            <textarea id="user-comment" placeholder="Text input" class="comment"></textarea>
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+              class="comment"
+            ></textarea>
           </div>
-          <div class="tc-btn">
-            <div class="tc-box">
-              <input
-                type="checkbox"
-                name="agreements"
-                id="agreements"
-                required
-                class="checkbox-input"
-              /><label for="agreements" class="checkbox-label"
-                ><span class="checkbox"
-                  ><svg width="10" height="8" class="icon-checked">
-                    <use href="./images/icons.svg#icon-click"></use></svg></span
-                ><span class="form-label">
-                  I accept the terms and conditions of the <a href="#" class="policy">Privacy Policy</a>
-                </span>
-              </label>
-            </div>
-            <button type="submit" class="modal-button">Send</button>
+          <div class="tc-box">
+            <input
+              type="checkbox"
+              name="agreements"
+              id="user-privacy"
+              required
+              class="visually-hidden"
+            /><label for="user-privacy" class="checkbox-label"
+              ><span class="checkbox"
+                ><svg width="10" height="8" class="icon-checked">
+                  <use href="./images/icons.svg#icon-click"></use></svg></span
+              ><span class="form-label">
+                I accept the terms and conditions of the <a href="#" class="policy">Privacy Policy</a>
+              </span>
+            </label>
           </div>
+          <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
     </div>

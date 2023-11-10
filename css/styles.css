@@ -665,7 +665,9 @@ body {
 .form-input:hover + .input-icon {
   fill: var(--IRIS);
 }
-
+.comment-container {
+  margin-bottom: 16px;
+}
 .comment {
   display: block;
   resize: none;
@@ -678,23 +680,18 @@ body {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  padding-top: 8px;
-  padding-left: 16px;
+  padding: 8px 16px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment:focus-within,
 .comment:hover,
 .comment:focus {
   border: 1px solid;
   border-color: var(--IRIS);
-  outline: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-label {
-  color: var(--LIGHT-SLATE);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   margin-bottom: 4px;
   margin-top: 8px;
 }
@@ -703,25 +700,21 @@ body {
   color: var(--IRIS);
 }
 .tc-box {
-  margin-top: 16px;
+  margin-bottom: 24px;
 }
-.tc-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .checkbox-label {
+  display: block;
   position: relative;
   display: inline-flex;
   align-items: center;
   cursor: pointer;
   gap: 8px;
-}
-.checkbox-input {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  clip: rect(1px, 1px, 1px, 1px);
+  color: var(--LIGHT-SLATE);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .checkbox {
@@ -734,6 +727,10 @@ body {
   background-color: var(--WHITE);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-checked {
   visibility: hidden;
