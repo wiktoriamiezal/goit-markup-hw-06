@@ -501,11 +501,15 @@ body {
   cursor: pointer;
   background-color: var(--GREEN);
 }
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+}
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 .footer-input {
-  gap: 24px;
   width: 264px;
   height: 40px;
   flex-shrink: 0;
@@ -577,7 +581,7 @@ body {
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
-.modal-container {
+.modal-form {
   padding: 72px 24px 24px 24px;
 }
 .closing-button {
