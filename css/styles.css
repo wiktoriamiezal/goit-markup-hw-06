@@ -626,6 +626,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 .form-data {
   margin-bottom: 8px;
@@ -633,28 +634,38 @@ body {
   flex-direction: column;
 }
 .input-icons {
-  display: flex;
-  box-sizing: border-box;
-  border: 1px solid var(--NAVY-BLUE-MODAL);
-  width: 100%;
-  height: 40px;
-  border-radius: 4px;
-  padding-left: 16px;
-  align-items: center;
-  fill: var(--NAVY-BLUE);
+  position: relative;
 }
-
-.input-icons:focus-within,
-.input-icons:focus,
-.input-icons:hover {
-  border-color: var(--IRIS);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--IRIS);
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--NAVY-BLUE);
 }
 .form-input {
   border: none;
-  outline: none;
+  outline: transparent;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-input:focus-within,
+.form-input:focus,
+.form-input:hover {
+  border-color: var(--IRIS);
+}
+.form-input:focus-within + .input-icon,
+.form-input:focus + .input-icon,
+.form-input:hover + .input-icon {
+  fill: var(--IRIS);
+}
+
 .comment {
   display: block;
   resize: none;
