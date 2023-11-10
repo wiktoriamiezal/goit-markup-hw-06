@@ -566,18 +566,18 @@ body {
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  min-height: 584px;
+  max-height: 584px;
   background-color: var(--DAIRY);
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
 }
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -628,7 +628,7 @@ body {
   letter-spacing: 0.02em;
 }
 .form-data {
-  margin-top: 16px;
+  margin-bottom: 8px;
   display: flex;
   flex-direction: column;
 }
