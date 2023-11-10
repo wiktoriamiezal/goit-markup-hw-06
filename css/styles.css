@@ -505,6 +505,7 @@ body {
   display: flex;
 }
 .footer-input {
+  gap: 24px;
   width: 264px;
   height: 40px;
   flex-shrink: 0;
@@ -518,18 +519,17 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--WHITE);
-  gap: 24px;
 }
 .footer-input::placeholder {
   color: var(--WHITE);
 }
 
 .subscribe-button {
+  min-width: 165px;
   display: inline-flex;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   color: var(--WHITE, #fff);
@@ -539,6 +539,7 @@ body {
   letter-spacing: 0.04em;
 }
 .subscribe-svg {
+  margin-left: 16px;
   fill: var(--WHITE);
 }
 /* modal */
@@ -576,6 +577,9 @@ body {
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
+.modal-container {
+  padding: 72px 24px 24px 24px;
+}
 .closing-button {
   height: 24px;
   width: 24px;
@@ -609,9 +613,7 @@ body {
 .closing-button:focus .closing-icon {
   fill: var(--WHITE);
 }
-.form {
-  margin: 72px 24px 24px 24px;
-}
+
 .modal-title {
   max-width: 360px;
   color: var(--NAVY-BLUE);
