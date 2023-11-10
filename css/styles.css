@@ -645,10 +645,6 @@ body {
   fill: var(--NAVY-BLUE);
 }
 .form-input {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--LIGHT-SLATE);
   border: none;
   outline: transparent;
   width: 100%;
@@ -696,8 +692,11 @@ body {
   border-color: var(--IRIS);
 }
 .form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--LIGHT-SLATE);
   margin-bottom: 4px;
-  margin-top: 8px;
 }
 .privacy {
   text-decoration: underline;
@@ -735,14 +734,9 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-checked {
-  visibility: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 .checkbox-input:checked + .checkbox-label .checkbox {
+  border: none;
   background-color: var(--OCEAN);
 }
 .checkbox-input:checked + .checkbox-label .icon-checked {
