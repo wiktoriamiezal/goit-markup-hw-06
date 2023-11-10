@@ -645,6 +645,10 @@ body {
   fill: var(--NAVY-BLUE);
 }
 .form-input {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--LIGHT-SLATE);
   border: none;
   outline: transparent;
   width: 100%;
@@ -682,8 +686,7 @@ body {
   letter-spacing: 0.04em;
   padding: 8px 16px;
   background-color: transparent;
-  outline: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment:focus-within,
 .comment:hover,
@@ -695,7 +698,7 @@ body {
   margin-bottom: 4px;
   margin-top: 8px;
 }
-.policy {
+.privacy {
   text-decoration: underline;
   color: var(--IRIS);
 }
@@ -706,7 +709,6 @@ body {
 .checkbox-label {
   display: block;
   position: relative;
-  display: inline-flex;
   align-items: center;
   cursor: pointer;
   gap: 8px;
@@ -747,9 +749,11 @@ body {
   fill: var(--CLOUD);
 }
 .modal-button {
+  font-family: 'Roboto';
+  display: block;
   padding: 0;
   margin-top: 24px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
   background: var(--IRIS);
