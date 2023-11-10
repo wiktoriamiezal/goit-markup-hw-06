@@ -471,7 +471,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .footer-social {
@@ -501,11 +501,6 @@ body {
   cursor: pointer;
   background-color: var(--GREEN);
 }
-.newsletter-field {
-  display: flex;
-  gap: 24px;
-  margin-top: 16px;
-}
 
 .footer-form {
   width: 264px;
@@ -514,11 +509,11 @@ body {
   border-radius: 4px;
   border: 1px solid var(--WHITE);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background: var(--NAVY-BLUE);
-  padding-inline-start: 16px;
+  background-color: transparent;
+  padding-left: 16px;
   font-size: 12px;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 }
 .footer-form::placeholder {
