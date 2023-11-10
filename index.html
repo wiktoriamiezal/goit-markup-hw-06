@@ -34,9 +34,7 @@
         <address>
           <ul class="address">
             <li>
-              <a class="header-contacts link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
               <a class="header-contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
@@ -67,8 +65,8 @@
               </div>
               <h3 class="features-heading">Strategy</h3>
               <p class="features-description">
-                Our goal is to identify the business problem to walk away with the perfect and
-                creative solution.
+                Our goal is to identify the business problem to walk away with the perfect and creative
+                solution.
               </p>
             </li>
             <li class="features-list">
@@ -79,8 +77,8 @@
               </div>
               <h3 class="features-heading">Punctuality</h3>
               <p class="features-description">
-                Bring the key message to the brand's audience for the best price within the shortest
-                possible time.
+                Bring the key message to the brand's audience for the best price within the shortest possible
+                time.
               </p>
             </li>
             <li class="features-list">
@@ -91,8 +89,8 @@
               </div>
               <h3 class="features-heading">Diligence</h3>
               <p class="features-description">
-                Research and confirm brands that present the strongest digital growth opportunities
-                and minimize risk.
+                Research and confirm brands that present the strongest digital growth opportunities and
+                minimize risk.
               </p>
             </li>
             <li class="features-list">
@@ -115,28 +113,13 @@
           <h2 class="header-two">What are we doing</h2>
           <ul class="second-section-pics">
             <li class="second-section-list">
-              <img
-                src="./images/pc.jpg"
-                alt="computer monitor displaying desktop"
-                width="360"
-                height="300"
-              />
+              <img src="./images/pc.jpg" alt="computer monitor displaying desktop" width="360" height="300" />
             </li>
             <li class="second-section-list">
-              <img
-                src="./images/whatsapp.jpg"
-                alt="smartphone with screenshots"
-                width="360"
-                height="300"
-              />
+              <img src="./images/whatsapp.jpg" alt="smartphone with screenshots" width="360" height="300" />
             </li>
             <li class="second-section-list">
-              <img
-                src="./images/smartphone.jpg"
-                alt="person holding smartphone"
-                width="360"
-                height="300"
-              />
+              <img src="./images/smartphone.jpg" alt="person holding smartphone" width="360" height="300" />
             </li>
           </ul>
         </div>
@@ -347,12 +330,10 @@
     <footer class="footer">
       <div class="container footer-flex">
         <div class="ft-margin">
-          <a class="logo-footer link" href="./index.html"
-            >Web<span class="studio-footer">Studio</span></a
-          >
+          <a class="logo-footer link" href="./index.html">Web<span class="studio-footer">Studio</span></a>
           <p class="footer-text">
-            Increase the flow of customers and sales for your business with digital marketing &
-            growth solutions.
+            Increase the flow of customers and sales for your business with digital marketing & growth
+            solutions.
           </p>
         </div>
         <div>
@@ -384,6 +365,27 @@
             </li>
           </ul>
         </div>
+        <div class="container footer-flex">
+          <form>
+            <label for="user_email" class="social-text">Subscribe</label>
+            <div class="newsletter-field">
+              <input
+                type="email"
+                name="email"
+                id="user_email"
+                placeholder="E-mail"
+                required
+                class="footer-form"
+              />
+              <button class="subscribe-button footer-button" type="submit">
+                Subscribe
+                <svg width="24" height="24" class="subscribe-svg">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -393,6 +395,47 @@
             <use href="./images/icons.svg#modal-close-button"></use>
           </svg>
         </button>
+        <form class="form">
+          <h3 class="modal-title">Leave your contacts and we will call you back</h3>
+          <div class="form-data">
+            <label for="name" class="form-label">Name</label>
+            <div class="input-icons">
+              <svg width="18" height="18"><use href="./images/icons.svg#icon-person"></use></svg>
+              <input type="text" name="name" id="name" class="form-input" required />
+            </div>
+            <label for="phone" class="form-label">Phone</label>
+            <div class="input-icons">
+              <svg width="18" height="24"><use href="./images/icons.svg#icon-phone"></use></svg>
+              <input type="tel" name="phone_number" id="phone" class="form-input" required />
+            </div>
+            <label for="email" class="form-label">Email</label>
+            <div class="input-icons">
+              <svg width="18" height="24"><use href="./images/icons.svg#icon-email"></use></svg>
+              <input type="email" name="email" id="email" class="form-input" required />
+            </div>
+            <label for="comment" class="form-label">Comment</label>
+            <textarea id="comment" placeholder="Text input" class="comment"></textarea>
+          </div>
+          <div class="tc-btn">
+            <div class="tc-box">
+              <input
+                type="checkbox"
+                name="agreements"
+                id="agreements"
+                required
+                class="checkbox-input"
+              /><label for="agreements" class="checkbox-label"
+                ><span class="checkbox"
+                  ><svg width="10" height="8" class="icon-checked">
+                    <use href="./images/icons.svg#icon-click"></use></svg></span
+                ><span class="form-label">
+                  I accept the terms and conditions of the <a href="#" class="policy">Privacy Policy</a>
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="modal-button">Send</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
