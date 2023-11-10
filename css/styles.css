@@ -691,16 +691,17 @@ body {
   border: 1px solid;
   border-color: var(--IRIS);
 }
+
+.privacy {
+  text-decoration: underline;
+  color: var(--IRIS);
+}
 .form-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--LIGHT-SLATE);
   margin-bottom: 4px;
-}
-.privacy {
-  text-decoration: underline;
-  color: var(--IRIS);
 }
 .tc-box {
   margin-bottom: 24px;
@@ -742,7 +743,7 @@ body {
 }
 
 .modal-button {
-  transform: translateX(50%);
+  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   display: block;
   margin-top: 24px;
